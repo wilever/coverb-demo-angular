@@ -1,0 +1,30 @@
+{
+  "name": "coverb-demo-angular",
+  "description": "Description of app.json file for coverb-demo-angular",
+  "scripts": {
+  },
+  "env": {
+    "MAVEN_CUSTOM_OPTS": {
+      "required": true
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/java"
+    }
+  ]
+}
