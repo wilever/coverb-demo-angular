@@ -18,6 +18,9 @@ import { JhipsterHomeModule } from './home/home.module';
 import { JhipsterAccountModule } from './account/account.module';
 import { JhipsterEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
+import { JhipsterDefaultModule } from 'app/coverb/default/module';
+import { JhipsterResumeModule } from 'app/coverb/resume/module';
+import { JhipsterCompanyModule } from 'app/coverb/company/module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
 
@@ -37,6 +40,9 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
         JhipsterCoreModule,
         JhipsterHomeModule,
         JhipsterAccountModule,
+        JhipsterDefaultModule,
+        JhipsterResumeModule,
+        JhipsterCompanyModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
         JhipsterEntityModule
     ],
