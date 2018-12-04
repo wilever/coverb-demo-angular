@@ -1,9 +1,9 @@
 {
   "name": "jhipster",
-  "version": "0.0.0",
+  "version": "1.0.5-BETA",
   "description": "Description for jhipster",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "cacheDirectories": [
     "node_modules"
   ],
