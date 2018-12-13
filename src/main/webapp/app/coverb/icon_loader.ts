@@ -1,84 +1,98 @@
-// Imports all fontawesome core and solid icons
+// coverb demo icon loader
+// footer
+
+import { faInstagram } from '../../content/icon/brand/faInstagram';
+import { faTwitter } from '../../content/icon/brand/faTwitter';
+import { faGithub } from '../../content/icon/brand/faGithub';
+
+// company
+
+import { faBullhorn } from '../../content/icon/solid/faBullhorn';
+import { faChartLine } from '../../content/icon/solid/faChartLine';
+import { faMagic } from '../../content/icon/solid/faMagic';
+import { faCubes } from '../../content/icon/solid/faCubes';
+import { faCogs } from '../../content/icon/solid/faCogs';
+import { faServer } from '../../content/icon/solid/faServer';
+
+// default
+
+import { faSass } from '../../content/icon/brand/faSass';
+import { faKey } from '../../content/icon/solid/faKey';
+import { faLanguage } from '../../content/icon/solid/faLanguage';
+import { faLockOpen } from '../../content/icon/solid/faLockOpen';
+// import { faMagic } from '../../content/icon/solid/faMagic';
+import { faPalette } from '../../content/icon/solid/faPalette';
+
+// resume
+
+// import { faSass } from '../../content/icon/brand/faSass';
+import { faLinkedin } from '../../content/icon/brand/faLinkedin';
+import { faBaseballBall } from '../../content/icon/solid/faBaseballBall';
+import { faBicycle } from '../../content/icon/solid/faBicycle';
+import { faBookReader } from '../../content/icon/solid/faBookReader';
+import { faCamera } from '../../content/icon/solid/faCamera';
+import { faCode } from '../../content/icon/solid/faCode';
+import { faDumbbell } from '../../content/icon/solid/faDumbbell';
+import { faEnvelope } from '../../content/icon/solid/faEnvelope';
+import { faGamepad } from '../../content/icon/solid/faGamepad';
+import { faGraduationCap } from '../../content/icon/solid/faGraduationCap';
+import { faGrinBeam } from '../../content/icon/solid/faGrinBeam';
+import { faHandshake } from '../../content/icon/solid/faHandshake';
+import { faHeadset } from '../../content/icon/solid/faHeadset';
+import { faHome } from '../../content/icon/solid/faHome';
+import { faImage } from '../../content/icon/solid/faImage';
+import { faKeyboard } from '../../content/icon/solid/faKeyboard';
+// import { faLanguage } from '../../content/icon/solid/faLanguage';
+import { faMusic } from '../../content/icon/solid/faMusic';
+// import { faPalette } from '../../content/icon/solid/faPalette';
+import { faPhone } from '../../content/icon/solid/faPhone';
+import { faSwimmer } from '../../content/icon/solid/faSwimmer';
+import { faTheaterMasks } from '../../content/icon/solid/faTheaterMasks';
+import { faTicketAlt } from '../../content/icon/solid/faTicketAlt';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-import {
-    faUser,
-    faSort,
-    faSortUp,
-    faSortDown,
-    faSync,
-    faEye,
-    faBan,
-    faTimes,
-    faArrowLeft,
-    faSave,
-    faPlus,
-    faPencilAlt,
-    faBars,
-    faThList,
-    faUserPlus,
-    faRoad,
-    faTachometerAlt,
-    faHeart,
-    faList,
-    faBell,
-    faBook,
-    faHdd,
-    faFlag,
-    faWrench,
-    faClock,
-    faCloud,
-    faSignOutAlt,
-    faSignInAlt,
-    faCalendarAlt,
-    faSearch,
-    faTrashAlt,
-    faAsterisk,
-    faTasks,
-    faHome
-} from '@fortawesome/free-solid-svg-icons';
-
-// Adds the SVG icon to the library so you can use it in your page
-library.add(faUser);
-library.add(faSort);
-library.add(faSortUp);
-library.add(faSortDown);
-library.add(faSync);
-library.add(faEye);
-library.add(faBan);
-library.add(faTimes);
-library.add(faArrowLeft);
-library.add(faSave);
-library.add(faPlus);
-library.add(faPencilAlt);
-library.add(faBars);
-library.add(faHome);
-library.add(faThList);
-library.add(faUserPlus);
-library.add(faRoad);
-library.add(faTachometerAlt);
-library.add(faHeart);
-library.add(faList);
-library.add(faBell);
-library.add(faTasks);
-library.add(faBook);
-library.add(faHdd);
-library.add(faFlag);
-library.add(faWrench);
-library.add(faClock);
-library.add(faCloud);
-library.add(faSignOutAlt);
-library.add(faSignInAlt);
-library.add(faCalendarAlt);
-library.add(faSearch);
-library.add(faTrashAlt);
-library.add(faAsterisk);
-
-// Imports all fontawesome icons
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-
-// Add all icons to the library so you can use it in your page
-library.add(fas, fab);
-// jhipster-needle-add-element-to-vendor - JHipster will add new menu items here
+library.add(
+    faInstagram,
+    faTwitter,
+    faGithub,
+    faBullhorn,
+    faChartLine,
+    faMagic,
+    faCubes,
+    faCogs,
+    faServer,
+    faSass,
+    faKey,
+    faLanguage,
+    faLockOpen,
+    // faMagic,
+    faPalette,
+    // faInstagram,
+    // faSass,
+    // faTwitter,
+    // faGithub,
+    faLinkedin,
+    faBaseballBall,
+    faBicycle,
+    faBookReader,
+    faCamera,
+    faCode,
+    faDumbbell,
+    faEnvelope,
+    faGamepad,
+    faGraduationCap,
+    faGrinBeam,
+    faHandshake,
+    faHeadset,
+    faHome,
+    faImage,
+    faKeyboard,
+    // faLanguage,
+    faMusic,
+    // faPalette,
+    faPhone,
+    faSwimmer,
+    faTheaterMasks,
+    faTicketAlt
+);

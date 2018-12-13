@@ -1,4 +1,5 @@
 import './vendor.ts';
+import 'app/coverb/icon_loader';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
