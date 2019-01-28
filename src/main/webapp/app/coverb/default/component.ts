@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import './icon-loader';
+import './icon_loader';
 
 @Component({
     selector: 'jhi-default',
