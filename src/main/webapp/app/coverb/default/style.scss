@@ -1,5 +1,4 @@
 /* style.scss */
-
 #default {
     font-family: Arial, Helvetica, sans-serif;
     .jumbotron {
@@ -34,6 +33,11 @@
         background-repeat: no-repeat;
         background-position: center;
         margin: 2% auto;
+    }
+
+    h2,
+    h4 {
+        font-weight: bolder;
     }
 
     /* Images*/
