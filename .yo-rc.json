@@ -4,7 +4,11 @@
       "packageName": "com.mycompany.myapp",
       "nativeLanguage": "en"
     },
+<<<<<<< HEAD
     "jhipsterVersion": "5.7.0",
+=======
+    "jhipsterVersion": "5.8.0",
+>>>>>>> jhipster_upgrade
     "applicationType": "monolith",
     "baseName": "jhipster",
     "packageName": "com.mycompany.myapp",
@@ -36,6 +40,12 @@
       "es"
     ],
     "herokuAppName": "coverb-demo-angular",
+<<<<<<< HEAD
     "herokuDeployType": "git"
+=======
+    "herokuDeployType": "git",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO"
+>>>>>>> jhipster_upgrade
   }
 }

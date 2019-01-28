@@ -6,8 +6,12 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { JhiLanguageService, JhiDataUtils, JhiDateUtils, JhiEventManager, JhiAlertService, JhiParseLinks } from 'ng-jhipster';
 
 import { MockLanguageService, MockLanguageHelper } from './helpers/mock-language.service';
+<<<<<<< HEAD
 import { JhiLanguageHelper, Principal, AccountService, LoginModalService } from 'app/core';
 import { MockPrincipal } from './helpers/mock-principal.service';
+=======
+import { JhiLanguageHelper, AccountService, LoginModalService } from 'app/core';
+>>>>>>> jhipster_upgrade
 import { MockAccountService } from './helpers/mock-account.service';
 import { MockActivatedRoute, MockRouter } from './helpers/mock-route.service';
 import { MockActiveModal } from './helpers/mock-active-modal.service';
@@ -44,10 +48,13 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
             useClass: MockRouter
         },
         {
+<<<<<<< HEAD
             provide: Principal,
             useClass: MockPrincipal
         },
         {
+=======
+>>>>>>> jhipster_upgrade
             provide: AccountService,
             useClass: MockAccountService
         },

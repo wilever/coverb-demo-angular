@@ -14,7 +14,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.sql.SQLException;
+<<<<<<< HEAD
 import java.lang.NumberFormatException;
+=======
+>>>>>>> jhipster_upgrade
 
 @Configuration
 @EnableJpaRepositories("com.mycompany.myapp.repository")
@@ -44,7 +47,11 @@ public class DatabaseConfiguration {
         return H2ConfigurationHelper.createServer(port);
     }
 	
+<<<<<<< HEAD
     private String getValidPortForH2() throws NumberFormatException {
+=======
+    private String getValidPortForH2() {
+>>>>>>> jhipster_upgrade
         int port = Integer.parseInt(env.getProperty("server.port"));
         if (port < 10000) {
             port = 10000 + port;

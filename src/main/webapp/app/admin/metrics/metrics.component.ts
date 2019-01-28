@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
+<<<<<<< HEAD
 import { JhiMetricsMonitoringModalComponent } from './metrics-modal.component';
+=======
+>>>>>>> jhipster_upgrade
 import { JhiMetricsService } from './metrics.service';
 
 @Component({
@@ -10,8 +13,12 @@ import { JhiMetricsService } from './metrics.service';
 })
 export class JhiMetricsMonitoringComponent implements OnInit {
     metrics: any = {};
+<<<<<<< HEAD
     cachesStats: any = {};
     servicesStats: any = {};
+=======
+    threadData: any = {};
+>>>>>>> jhipster_upgrade
     updatingMetrics = true;
     JCACHE_KEY: string;
 
@@ -27,6 +34,7 @@ export class JhiMetricsMonitoringComponent implements OnInit {
         this.updatingMetrics = true;
         this.metricsService.getMetrics().subscribe(metrics => {
             this.metrics = metrics;
+<<<<<<< HEAD
             this.updatingMetrics = false;
             this.servicesStats = {};
             this.cachesStats = {};
@@ -74,4 +82,12 @@ export class JhiMetricsMonitoringComponent implements OnInit {
         }
         return input;
     }
+=======
+            this.metricsService.threadDump().subscribe(data => {
+                this.threadData = data.threads;
+                this.updatingMetrics = false;
+            });
+        });
+    }
+>>>>>>> jhipster_upgrade
 }

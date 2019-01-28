@@ -19,10 +19,19 @@ management:
         web:
             base-path: /management
             exposure:
+<<<<<<< HEAD
                 include: ["configprops", "env", "health", "info", "threaddump", "logfile" ]
     endpoint:
         health:
             show-details: when-authorized
+=======
+                include: ["configprops", "env", "health", "info", "threaddump", "logfile", "jhi-metrics", "prometheus" ]
+    endpoint:
+        health:
+            show-details: when-authorized
+        jhi-metrics:
+            enabled: true
+>>>>>>> jhipster_upgrade
     info:
         git:
             mode: full
@@ -30,7 +39,36 @@ management:
         mail:
             enabled: false # When using the MailService, configure an SMTP server and set this to true
     metrics:
+<<<<<<< HEAD
         enabled: false # http://micrometer.io/ is disabled by default, as we use http://metrics.dropwizard.io/ instead
+=======
+        export:
+            # Prometheus is the default metrics backend
+            prometheus:
+                enabled: true
+                step: 60
+        binders:
+            jvm:
+                enabled: true
+            processor:
+                enabled: true
+            uptime:
+                enabled: true
+            logback:
+                enabled: true
+            files:
+                enabled: true
+            integration:
+                enabled: true
+        distribution:
+            percentiles-histogram:
+                all: true
+            percentiles:
+                all: 0, 0.5, 0.75, 0.95, 0.99, 1.0
+        web:
+            server:
+                auto-time-requests: true
+>>>>>>> jhipster_upgrade
 
 spring:
     application:

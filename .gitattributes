@@ -93,7 +93,10 @@ TODO            text
 .stylelintrc    text
 
 ## CONFIGS
+<<<<<<< HEAD
 *.bowerrc       text
+=======
+>>>>>>> jhipster_upgrade
 *.conf          text
 *.config        text
 .editorconfig   text

@@ -5,8 +5,12 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
     selector: '[jhiActiveMenu]'
 })
 export class ActiveMenuDirective implements OnInit {
+<<<<<<< HEAD
     @Input()
     jhiActiveMenu: string;
+=======
+    @Input() jhiActiveMenu: string;
+>>>>>>> jhipster_upgrade
 
     constructor(private el: ElementRef, private renderer: Renderer, private translateService: TranslateService) {}
 

@@ -122,6 +122,10 @@ public class UserService {
         log.debug("Created Information for User: {}", newUser);
         return newUser;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> jhipster_upgrade
     private boolean removeNonActivatedUser(User existingUser){
         if (existingUser.getActivated()) {
              return false;

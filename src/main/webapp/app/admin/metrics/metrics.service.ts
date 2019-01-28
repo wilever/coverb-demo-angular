@@ -9,7 +9,11 @@ export class JhiMetricsService {
     constructor(private http: HttpClient) {}
 
     getMetrics(): Observable<any> {
+<<<<<<< HEAD
         return this.http.get(SERVER_API_URL + 'management/metrics');
+=======
+        return this.http.get(SERVER_API_URL + 'management/jhi-metrics');
+>>>>>>> jhipster_upgrade
     }
 
     threadDump(): Observable<any> {

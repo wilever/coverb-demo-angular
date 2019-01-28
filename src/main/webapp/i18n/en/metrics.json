@@ -39,14 +39,23 @@
                 "scavengetime": "Scavenge time"
             },
             "http": {
+<<<<<<< HEAD
                 "title": "HTTP requests (events per second)",
+=======
+                "title": "HTTP requests (time in millisecond)",
+>>>>>>> jhipster_upgrade
                 "active": "Active requests:",
                 "total": "Total requests:",
                 "table": {
                     "code": "Code",
                     "count": "Count",
                     "mean": "Mean",
+<<<<<<< HEAD
                     "average": "Average"
+=======
+                    "average": "Average",
+                    "max": "Max"
+>>>>>>> jhipster_upgrade
                 },
                 "code": {
                     "ok": "Ok",
@@ -85,7 +94,11 @@
             "averageRemoveTime": "Average remove time (µs)"
         },
         "datasource": {
+<<<<<<< HEAD
             "usage": "Usage",
+=======
+            "usage": "Connection Pool Usage",
+>>>>>>> jhipster_upgrade
             "title": "DataSource statistics (time in millisecond)",
             "name": "Pool usage",
             "count": "Count",

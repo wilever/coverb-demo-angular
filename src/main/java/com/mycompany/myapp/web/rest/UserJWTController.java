@@ -4,7 +4,10 @@ import com.mycompany.myapp.security.jwt.JWTFilter;
 import com.mycompany.myapp.security.jwt.TokenProvider;
 import com.mycompany.myapp.web.rest.vm.LoginVM;
 
+<<<<<<< HEAD
 import com.codahale.metrics.annotation.Timed;
+=======
+>>>>>>> jhipster_upgrade
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import org.springframework.http.HttpHeaders;
@@ -35,7 +38,10 @@ public class UserJWTController {
     }
 
     @PostMapping("/authenticate")
+<<<<<<< HEAD
     @Timed
+=======
+>>>>>>> jhipster_upgrade
     public ResponseEntity<JWTToken> authorize(@Valid @RequestBody LoginVM loginVM) {
 
         UsernamePasswordAuthenticationToken authenticationToken =

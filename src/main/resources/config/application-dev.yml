@@ -29,6 +29,10 @@ spring:
     devtools:
         restart:
             enabled: true
+<<<<<<< HEAD
+=======
+            additional-exclude: .h2.server.properties
+>>>>>>> jhipster_upgrade
         livereload:
             enabled: false # we use Webpack dev server + BrowserSync for livereload
     jackson:
@@ -40,6 +44,10 @@ spring:
         username: jhipster
         password:
         hikari:
+<<<<<<< HEAD
+=======
+            poolName: Hikari
+>>>>>>> jhipster_upgrade
             auto-commit: false
     h2:
         console:
@@ -94,7 +102,11 @@ jhipster:
     security:
         authentication:
             jwt:
+<<<<<<< HEAD
                 # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
+=======
+                # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
+>>>>>>> jhipster_upgrade
                 base64-secret: MTZiMmM3M2JkOGU4ZjZhYzI2MjAzZTU5YjM3YjIwMmIxYTEzNjlkNjgwNWYxOTg5OWE1ZTc1OWUzZGU5OTBlNTU1ZWFmYjAzOTEwN2RkMjMzYTgxNWRiZDc3MmYxNzM2YTFiYjVlZTk3MzRiNWViODIyYmFlOTMzZjBhYjRiMWU=
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
@@ -102,12 +114,17 @@ jhipster:
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: jhipster@localhost
         base-url: http://127.0.0.1:8080
+<<<<<<< HEAD
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx:
             enabled: true
         prometheus:
             enabled: false #expose metrics via prometheus
         logs: # Reports Dropwizard metrics in the logs
+=======
+    metrics:
+        logs: # Reports metrics in the logs
+>>>>>>> jhipster_upgrade
             enabled: false
             report-frequency: 60 # in seconds
     logging:

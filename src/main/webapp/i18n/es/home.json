@@ -1,6 +1,10 @@
 {
     "home": {
+<<<<<<< HEAD
         "title": "coverb",
+=======
+        "title": "¡Bienvenido, Java Hipster!",
+>>>>>>> jhipster_upgrade
         "subtitle": "Esta es su página de inicio",
         "logged": {
             "message": "Está conectado como \"{{username}}\"."

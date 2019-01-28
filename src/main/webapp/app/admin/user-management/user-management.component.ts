@@ -6,7 +6,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { JhiEventManager, JhiParseLinks, JhiAlertService } from 'ng-jhipster';
 
 import { ITEMS_PER_PAGE } from 'app/shared';
+<<<<<<< HEAD
 import { Principal, UserService, User } from 'app/core';
+=======
+import { AccountService, UserService, User } from 'app/core';
+>>>>>>> jhipster_upgrade
 import { UserMgmtDeleteDialogComponent } from 'app/admin';
 
 @Component({
@@ -21,7 +25,10 @@ export class UserMgmtComponent implements OnInit, OnDestroy {
     routeData: any;
     links: any;
     totalItems: any;
+<<<<<<< HEAD
     queryCount: any;
+=======
+>>>>>>> jhipster_upgrade
     itemsPerPage: any;
     page: any;
     predicate: any;
@@ -31,7 +38,11 @@ export class UserMgmtComponent implements OnInit, OnDestroy {
     constructor(
         private userService: UserService,
         private alertService: JhiAlertService,
+<<<<<<< HEAD
         private principal: Principal,
+=======
+        private accountService: AccountService,
+>>>>>>> jhipster_upgrade
         private parseLinks: JhiParseLinks,
         private activatedRoute: ActivatedRoute,
         private router: Router,
@@ -48,7 +59,11 @@ export class UserMgmtComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
+<<<<<<< HEAD
         this.principal.identity().then(account => {
+=======
+        this.accountService.identity().then(account => {
+>>>>>>> jhipster_upgrade
             this.currentAccount = account;
             this.loadAll();
             this.registerChangeInUsers();
@@ -136,7 +151,10 @@ export class UserMgmtComponent implements OnInit, OnDestroy {
     private onSuccess(data, headers) {
         this.links = this.parseLinks.parse(headers.get('link'));
         this.totalItems = headers.get('X-Total-Count');
+<<<<<<< HEAD
         this.queryCount = this.totalItems;
+=======
+>>>>>>> jhipster_upgrade
         this.users = data;
     }
 

@@ -1,6 +1,10 @@
 {
     "home": {
+<<<<<<< HEAD
         "title": "coverb",
+=======
+        "title": "Welcome, Java Hipster!",
+>>>>>>> jhipster_upgrade
         "subtitle": "This is your homepage",
         "logged": {
             "message": "You are logged in as user \"{{username}}\"."

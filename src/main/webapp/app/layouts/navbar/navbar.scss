@@ -1,8 +1,15 @@
+<<<<<<< HEAD
+=======
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+>>>>>>> jhipster_upgrade
 /* ==========================================================================
 Navbar
 ========================================================================== */
 
 .navbar-version {
+<<<<<<< HEAD
     font-size: 10px;
     color: #ccc;
 }
@@ -39,10 +46,43 @@ Navbar
         padding: 10px;
         &:hover {
             color: #fff;
+=======
+    font-size: 0.65em;
+    color: $navbar-dark-color;
+}
+
+.profile-image {
+    height: 1.75em;
+    width: 1.75em;
+}
+
+.navbar {
+    padding: 0.2rem 1rem;
+    .dropdown-item.active,
+    .dropdown-item.active:focus,
+    .dropdown-item.active:hover {
+        background-color: $dark;
+    }
+
+    ul.navbar-nav {
+        .nav-item {
+            margin-left: 0.5em;
+        }
+    }
+
+    a.nav-link {
+        font-weight: 400;
+    }
+
+    .navbar-toggler {
+        &:hover {
+            color: $navbar-dark-hover-color;
+>>>>>>> jhipster_upgrade
         }
     }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
     .jh-navbar-toggler {
         display: none;
@@ -75,4 +115,16 @@ Logo styles
             background-size: contain;
         }
     }
+=======
+/* ==========================================================================
+Logo styles
+========================================================================== */
+.logo-img {
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../../../content/images/logo-jhipster.png') no-repeat center center;
+    background-size: contain;
+>>>>>>> jhipster_upgrade
 }

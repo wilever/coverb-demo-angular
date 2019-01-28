@@ -13,10 +13,16 @@ export class JhiLanguageHelper {
 
     constructor(
         private translateService: TranslateService,
+<<<<<<< HEAD
         // tslint:disable-next-line: no-unused-variable
         private rootRenderer: RendererFactory2,
         private titleService: Title,
         private router: Router
+=======
+        private titleService: Title,
+        private router: Router,
+        rootRenderer: RendererFactory2
+>>>>>>> jhipster_upgrade
     ) {
         this._language = new BehaviorSubject<string>(this.translateService.currentLang);
         this.renderer = rootRenderer.createRenderer(document.querySelector('html'), null);

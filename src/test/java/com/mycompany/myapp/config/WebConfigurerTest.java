@@ -1,8 +1,11 @@
 package com.mycompany.myapp.config;
 
+<<<<<<< HEAD
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.servlet.InstrumentedFilter;
 import com.codahale.metrics.servlets.MetricsServlet;
+=======
+>>>>>>> jhipster_upgrade
 import io.github.jhipster.config.JHipsterConstants;
 import io.github.jhipster.config.JHipsterProperties;
 import io.github.jhipster.web.filter.CachingHttpHeadersFilter;
@@ -50,8 +53,11 @@ public class WebConfigurerTest {
 
     private JHipsterProperties props;
 
+<<<<<<< HEAD
     private MetricRegistry metricRegistry;
 
+=======
+>>>>>>> jhipster_upgrade
     @Before
     public void setup() {
         servletContext = spy(new MockServletContext());
@@ -64,8 +70,11 @@ public class WebConfigurerTest {
         props = new JHipsterProperties();
 
         webConfigurer = new WebConfigurer(env, props);
+<<<<<<< HEAD
         metricRegistry = new MetricRegistry();
         webConfigurer.setMetricRegistry(metricRegistry);
+=======
+>>>>>>> jhipster_upgrade
     }
 
     @Test
@@ -73,10 +82,13 @@ public class WebConfigurerTest {
         env.setActiveProfiles(JHipsterConstants.SPRING_PROFILE_PRODUCTION);
         webConfigurer.onStartup(servletContext);
 
+<<<<<<< HEAD
         assertThat(servletContext.getAttribute(InstrumentedFilter.REGISTRY_ATTRIBUTE)).isEqualTo(metricRegistry);
         assertThat(servletContext.getAttribute(MetricsServlet.METRICS_REGISTRY)).isEqualTo(metricRegistry);
         verify(servletContext).addFilter(eq("webappMetricsFilter"), any(InstrumentedFilter.class));
         verify(servletContext).addServlet(eq("metricsServlet"), any(MetricsServlet.class));
+=======
+>>>>>>> jhipster_upgrade
         verify(servletContext).addFilter(eq("cachingHttpHeadersFilter"), any(CachingHttpHeadersFilter.class));
         verify(servletContext, never()).addServlet(eq("H2Console"), any(WebServlet.class));
     }
@@ -86,10 +98,13 @@ public class WebConfigurerTest {
         env.setActiveProfiles(JHipsterConstants.SPRING_PROFILE_DEVELOPMENT);
         webConfigurer.onStartup(servletContext);
 
+<<<<<<< HEAD
         assertThat(servletContext.getAttribute(InstrumentedFilter.REGISTRY_ATTRIBUTE)).isEqualTo(metricRegistry);
         assertThat(servletContext.getAttribute(MetricsServlet.METRICS_REGISTRY)).isEqualTo(metricRegistry);
         verify(servletContext).addFilter(eq("webappMetricsFilter"), any(InstrumentedFilter.class));
         verify(servletContext).addServlet(eq("metricsServlet"), any(MetricsServlet.class));
+=======
+>>>>>>> jhipster_upgrade
         verify(servletContext, never()).addFilter(eq("cachingHttpHeadersFilter"), any(CachingHttpHeadersFilter.class));
         verify(servletContext).addServlet(eq("H2Console"), any(WebServlet.class));
     }

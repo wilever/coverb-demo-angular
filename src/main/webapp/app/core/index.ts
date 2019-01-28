@@ -6,7 +6,10 @@ export * from './language/language.helper';
 export * from './language/language.constants';
 export * from './user/account.model';
 export * from './user/user.model';
+<<<<<<< HEAD
 export * from './auth/principal.service';
+=======
+>>>>>>> jhipster_upgrade
 export * from './auth/user-route-access-service';
 export * from './login/login-modal.service';
 export * from './login/login.service';

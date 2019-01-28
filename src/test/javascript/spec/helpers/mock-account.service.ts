@@ -6,6 +6,10 @@ export class MockAccountService extends SpyObject {
     getSpy: Spy;
     saveSpy: Spy;
     fakeResponse: any;
+<<<<<<< HEAD
+=======
+    identitySpy: Spy;
+>>>>>>> jhipster_upgrade
 
     constructor() {
         super(AccountService);
@@ -13,6 +17,10 @@ export class MockAccountService extends SpyObject {
         this.fakeResponse = null;
         this.getSpy = this.spy('get').andReturn(this);
         this.saveSpy = this.spy('save').andReturn(this);
+<<<<<<< HEAD
+=======
+        this.setIdentitySpy({});
+>>>>>>> jhipster_upgrade
     }
 
     subscribe(callback: any) {
@@ -22,4 +30,15 @@ export class MockAccountService extends SpyObject {
     setResponse(json: any): void {
         this.fakeResponse = json;
     }
+<<<<<<< HEAD
+=======
+
+    setIdentitySpy(json: any): any {
+        this.identitySpy = this.spy('identity').andReturn(Promise.resolve(json));
+    }
+
+    setIdentityResponse(json: any): void {
+        this.setIdentitySpy(json);
+    }
+>>>>>>> jhipster_upgrade
 }

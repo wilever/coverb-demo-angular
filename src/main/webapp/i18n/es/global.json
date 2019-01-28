@@ -1,6 +1,10 @@
 {
     "global": {
+<<<<<<< HEAD
         "title": "coverb",
+=======
+        "title": "Jhipster",
+>>>>>>> jhipster_upgrade
         "browsehappy": "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=en\">actualice su navegador</a> para mejorar su experiencia.",
         "menu": {
             "home": "Inicio",
@@ -132,5 +136,9 @@
         "idexists": "A new {{entityName}} cannot already have an ID",
         "idnull": "Invalid ID"
     },
+<<<<<<< HEAD
     "footer": "coverb por jhipster-latino"
+=======
+    "footer": "pie de página"
+>>>>>>> jhipster_upgrade
 }

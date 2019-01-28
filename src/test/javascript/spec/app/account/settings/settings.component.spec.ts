@@ -2,7 +2,11 @@ import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { Observable, throwError } from 'rxjs';
 
 import { JhipsterTestModule } from '../../../test.module';
+<<<<<<< HEAD
 import { Principal, AccountService } from 'app/core';
+=======
+import { AccountService } from 'app/core';
+>>>>>>> jhipster_upgrade
 import { SettingsComponent } from 'app/account/settings/settings.component';
 
 describe('Component Tests', () => {
@@ -10,7 +14,10 @@ describe('Component Tests', () => {
         let comp: SettingsComponent;
         let fixture: ComponentFixture<SettingsComponent>;
         let mockAuth: any;
+<<<<<<< HEAD
         let mockPrincipal: any;
+=======
+>>>>>>> jhipster_upgrade
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
@@ -26,7 +33,10 @@ describe('Component Tests', () => {
             fixture = TestBed.createComponent(SettingsComponent);
             comp = fixture.componentInstance;
             mockAuth = fixture.debugElement.injector.get(AccountService);
+<<<<<<< HEAD
             mockPrincipal = fixture.debugElement.injector.get(Principal);
+=======
+>>>>>>> jhipster_upgrade
         });
 
         it('should send the current identity upon save', () => {
@@ -40,14 +50,22 @@ describe('Component Tests', () => {
                 langKey: 'en',
                 login: 'john'
             };
+<<<<<<< HEAD
             mockPrincipal.setResponse(accountValues);
+=======
+            mockAuth.setIdentityResponse(accountValues);
+>>>>>>> jhipster_upgrade
 
             // WHEN
             comp.settingsAccount = accountValues;
             comp.save();
 
             // THEN
+<<<<<<< HEAD
             expect(mockPrincipal.identitySpy).toHaveBeenCalled();
+=======
+            expect(mockAuth.identitySpy).toHaveBeenCalled();
+>>>>>>> jhipster_upgrade
             expect(mockAuth.saveSpy).toHaveBeenCalledWith(accountValues);
             expect(comp.settingsAccount).toEqual(accountValues);
         });
@@ -58,7 +76,11 @@ describe('Component Tests', () => {
                 firstName: 'John',
                 lastName: 'Doe'
             };
+<<<<<<< HEAD
             mockPrincipal.setResponse(accountValues);
+=======
+            mockAuth.setIdentityResponse(accountValues);
+>>>>>>> jhipster_upgrade
 
             // WHEN
             comp.save();

@@ -12,9 +12,13 @@
         "skipLibCheck": true,
         "outDir": "target/www/app",
         "lib": ["es7", "dom"],
+<<<<<<< HEAD
         "typeRoots": [
             "node_modules/@types"
         ],
+=======
+        "typeRoots": ["node_modules/@types"],
+>>>>>>> jhipster_upgrade
         "baseUrl": "./",
         "paths": {
             "app/*": ["src/main/webapp/app/*"]
@@ -23,7 +27,11 @@
     },
     "angularCompilerOptions": {
         "genDir": "target/aot",
+<<<<<<< HEAD
         "skipMetadataEmit" : true,
+=======
+        "skipMetadataEmit": true,
+>>>>>>> jhipster_upgrade
         "fullTemplateTypeCheck": true,
         "preserveWhitespaces": true
     }

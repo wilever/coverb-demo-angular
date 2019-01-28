@@ -17,7 +17,10 @@ export class AuditsComponent implements OnInit, OnDestroy {
     fromDate: string;
     itemsPerPage: any;
     links: any;
+<<<<<<< HEAD
     queryCount: number;
+=======
+>>>>>>> jhipster_upgrade
     page: number;
     routeData: any;
     predicate: any;
@@ -118,7 +121,10 @@ export class AuditsComponent implements OnInit, OnDestroy {
     private onSuccess(data, headers) {
         this.links = this.parseLinks.parse(headers.get('link'));
         this.totalItems = headers.get('X-Total-Count');
+<<<<<<< HEAD
         this.queryCount = this.totalItems;
+=======
+>>>>>>> jhipster_upgrade
         this.audits = data;
     }
 

@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+<<<<<<< HEAD
 import { Principal } from 'app/core';
+=======
+import { AccountService } from 'app/core';
+>>>>>>> jhipster_upgrade
 import { PasswordService } from './password.service';
 
 @Component({
@@ -16,10 +20,17 @@ export class PasswordComponent implements OnInit {
     newPassword: string;
     confirmPassword: string;
 
+<<<<<<< HEAD
     constructor(private passwordService: PasswordService, private principal: Principal) {}
 
     ngOnInit() {
         this.principal.identity().then(account => {
+=======
+    constructor(private passwordService: PasswordService, private accountService: AccountService) {}
+
+    ngOnInit() {
+        this.accountService.identity().then(account => {
+>>>>>>> jhipster_upgrade
             this.account = account;
         });
     }

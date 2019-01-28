@@ -13,7 +13,10 @@ import {
     UserMgmtUpdateComponent,
     UserMgmtDeleteDialogComponent,
     LogsComponent,
+<<<<<<< HEAD
     JhiMetricsMonitoringModalComponent,
+=======
+>>>>>>> jhipster_upgrade
     JhiMetricsMonitoringComponent,
     JhiHealthModalComponent,
     JhiHealthCheckComponent,
@@ -38,11 +41,18 @@ import {
         JhiHealthCheckComponent,
         JhiHealthModalComponent,
         JhiDocsComponent,
+<<<<<<< HEAD
         JhiMetricsMonitoringComponent,
         JhiMetricsMonitoringModalComponent
     ],
     providers: [{ provide: JhiLanguageService, useClass: JhiLanguageService }],
     entryComponents: [UserMgmtDeleteDialogComponent, JhiHealthModalComponent, JhiMetricsMonitoringModalComponent],
+=======
+        JhiMetricsMonitoringComponent
+    ],
+    providers: [{ provide: JhiLanguageService, useClass: JhiLanguageService }],
+    entryComponents: [UserMgmtDeleteDialogComponent, JhiHealthModalComponent],
+>>>>>>> jhipster_upgrade
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class JhipsterAdminModule {

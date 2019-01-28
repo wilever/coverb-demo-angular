@@ -27,7 +27,11 @@ describe('Service Tests', () => {
                 service.getMetrics().subscribe(() => {});
 
                 const req = httpMock.expectOne({ method: 'GET' });
+<<<<<<< HEAD
                 const resourceUrl = SERVER_API_URL + 'management/metrics';
+=======
+                const resourceUrl = SERVER_API_URL + 'management/jhi-metrics';
+>>>>>>> jhipster_upgrade
                 expect(req.request.url).toEqual(resourceUrl);
             });
 

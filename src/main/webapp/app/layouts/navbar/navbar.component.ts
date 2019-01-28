@@ -5,8 +5,13 @@ import { JhiLanguageService } from 'ng-jhipster';
 import { SessionStorageService } from 'ngx-webstorage';
 
 import { VERSION } from 'app/app.constants';
+<<<<<<< HEAD
 import { JhiLanguageHelper, Principal, LoginModalService, LoginService } from 'app/core';
 import { ProfileService } from '../profiles/profile.service';
+=======
+import { JhiLanguageHelper, AccountService, LoginModalService, LoginService } from 'app/core';
+import { ProfileService } from 'app/layouts/profiles/profile.service';
+>>>>>>> jhipster_upgrade
 
 @Component({
     selector: 'jhi-navbar',
@@ -26,7 +31,11 @@ export class NavbarComponent implements OnInit {
         private languageService: JhiLanguageService,
         private languageHelper: JhiLanguageHelper,
         private sessionStorage: SessionStorageService,
+<<<<<<< HEAD
         private principal: Principal,
+=======
+        private accountService: AccountService,
+>>>>>>> jhipster_upgrade
         private loginModalService: LoginModalService,
         private profileService: ProfileService,
         private router: Router
@@ -56,7 +65,11 @@ export class NavbarComponent implements OnInit {
     }
 
     isAuthenticated() {
+<<<<<<< HEAD
         return this.principal.isAuthenticated();
+=======
+        return this.accountService.isAuthenticated();
+>>>>>>> jhipster_upgrade
     }
 
     login() {
@@ -74,6 +87,10 @@ export class NavbarComponent implements OnInit {
     }
 
     getImageUrl() {
+<<<<<<< HEAD
         return this.isAuthenticated() ? this.principal.getImageUrl() : null;
+=======
+        return this.isAuthenticated() ? this.accountService.getImageUrl() : null;
+>>>>>>> jhipster_upgrade
     }
 }

@@ -105,6 +105,13 @@
 .app-loading .lds-pacman {
     position: relative;
     margin: auto;
+<<<<<<< HEAD
+=======
+    width: 200px !important;
+    height: 200px !important;
+    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+    transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+>>>>>>> jhipster_upgrade
 }
 .app-loading .lds-pacman > div:nth-child(2) div {
     position: absolute;
@@ -125,12 +132,20 @@
 }
 .app-loading .lds-pacman > div:nth-child(1) div {
     position: absolute;
+<<<<<<< HEAD
     top: 92px;
     left: -8px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     background-image: url('../images/hipster192.png');
+=======
+    top: 97px;
+    left: -8px;
+    width: 24px;
+    height: 10px;
+    background-image: url('../images/logo-jhipster.png');
+>>>>>>> jhipster_upgrade
     background-size: contain;
     -webkit-animation: lds-pacman-3 1s linear infinite;
     animation: lds-pacman-3 1.5s linear infinite;
@@ -147,9 +162,12 @@
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
 }
+<<<<<<< HEAD
 .app-loading .lds-pacman {
     width: 200px !important;
     height: 200px !important;
     -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
     transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
 }
+=======
+>>>>>>> jhipster_upgrade

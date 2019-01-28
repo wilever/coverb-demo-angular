@@ -1,5 +1,8 @@
 import './vendor.ts';
+<<<<<<< HEAD
 import 'app/coverb/icon-loader';
+=======
+>>>>>>> jhipster_upgrade
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -28,7 +31,10 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
 @NgModule({
     imports: [
         BrowserModule,
+<<<<<<< HEAD
         JhipsterAppRoutingModule,
+=======
+>>>>>>> jhipster_upgrade
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-' }),
         NgJhipsterModule.forRoot({
             // set below to true to make alerts look like toast
@@ -45,7 +51,12 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
         JhipsterResumeModule,
         JhipsterCompanyModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
+<<<<<<< HEAD
         JhipsterEntityModule
+=======
+        JhipsterEntityModule,
+        JhipsterAppRoutingModule
+>>>>>>> jhipster_upgrade
     ],
     declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
     providers: [

@@ -49,6 +49,7 @@ describe('Component Tests', () => {
 
                 // THEN
                 expect(service.getMetrics).toHaveBeenCalled();
+<<<<<<< HEAD
                 expect(comp.servicesStats).toEqual({ service: 'test' });
                 expect(comp.cachesStats).toEqual({ jcache: { name: 17, value: 2 } });
             });
@@ -58,6 +59,8 @@ describe('Component Tests', () => {
             it('should return if a variable is NaN', () => {
                 expect(comp.filterNaN(1)).toBe(1);
                 expect(comp.filterNaN('test')).toBe(0);
+=======
+>>>>>>> jhipster_upgrade
             });
         });
     });
