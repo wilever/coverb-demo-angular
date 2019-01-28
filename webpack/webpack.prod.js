@@ -25,11 +25,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
         main: './src/main/webapp/app/app.main'
     },
     output: {
-<<<<<<< HEAD
         path: utils.root('target/classes/public'),
-=======
-        path: utils.root('target/www'),
->>>>>>> jhipster_upgrade
         filename: 'app/[name].[hash].bundle.js',
         chunkFilename: 'app/[id].[hash].chunk.js'
     },
