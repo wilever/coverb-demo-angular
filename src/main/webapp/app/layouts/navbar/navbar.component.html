@@ -47,6 +47,17 @@
                 <!-- jhipster-needle-add-item-to-coverb-menu - JHipster will add items to the coverb menu here -->
                 </ul>
             </li>
+            <li ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="coverb">
+                    <span>
+                        <fa-icon [icon]="'cubes'"></fa-icon>
+                        <span jhiTranslate="global.menu.coverb">Coverb</span>
+                    </span>
+                </a>
+                <ul class="dropdown-menu" ngbDropdownMenu>
+                <!-- jhipster-needle-add-item-to-coverb-menu - JHipster will add items to the coverb menu here -->
+                </ul>
+            </li>
             <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
             <li *ngSwitchCase="true" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu">
