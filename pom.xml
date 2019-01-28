@@ -4,11 +4,7 @@
 
     <groupId>com.mycompany.myapp</groupId>
     <artifactId>jhipster</artifactId>
-<<<<<<< HEAD
-    <version>1.0.5-BETA</version>
-=======
     <version>0.0.1-SNAPSHOT</version>
->>>>>>> jhipster_upgrade
     <packaging>war</packaging>
     <name>Jhipster</name>
 
@@ -16,13 +12,10 @@
         <!-- jhipster-needle-maven-repository -->
     </repositories>
 
-<<<<<<< HEAD
-=======
     <pluginRepositories>
         <!-- jhipster-needle-maven-plugin-repository -->
     </pluginRepositories>
 
->>>>>>> jhipster_upgrade
     <!-- jhipster-needle-distribution-management -->
 
     <properties>
@@ -30,11 +23,7 @@
         <maven.version>3.0.0</maven.version>
         <java.version>1.8</java.version>
         <scala.version>2.12.6</scala.version>
-<<<<<<< HEAD
-        <node.version>v10.13.0</node.version>
-=======
         <node.version>v10.15.0</node.version>
->>>>>>> jhipster_upgrade
         <npm.version>6.4.1</npm.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -51,17 +40,10 @@
         <profile.tls />
 
         <!-- Dependency versions -->
-<<<<<<< HEAD
-        <jhipster-dependencies.version>2.0.28</jhipster-dependencies.version>
-        <!-- The spring-boot version should match the one managed by
-        https://mvnrepository.com/artifact/io.github.jhipster/jhipster-dependencies/${jhipster-dependencies.version} -->
-        <spring-boot.version>2.0.6.RELEASE</spring-boot.version>
-=======
         <jhipster-dependencies.version>2.1.1</jhipster-dependencies.version>
         <!-- The spring-boot version should match the one managed by
         https://mvnrepository.com/artifact/io.github.jhipster/jhipster-dependencies/${jhipster-dependencies.version} -->
         <spring-boot.version>2.0.8.RELEASE</spring-boot.version>
->>>>>>> jhipster_upgrade
         <!-- The hibernate version should match the one managed by
         https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies/${spring-boot.version} -->
         <hibernate.version>5.2.17.Final</hibernate.version>
@@ -80,10 +62,7 @@
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
         <maven-enforcer-plugin.version>3.0.0-M2</maven-enforcer-plugin.version>
-<<<<<<< HEAD
-=======
         <maven-idea-plugin.version>2.2.1</maven-idea-plugin.version>
->>>>>>> jhipster_upgrade
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
         <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.2.2</maven-war-plugin.version>
@@ -116,16 +95,9 @@
         <sonar.issue.ignore.multicriteria.S4684.ruleKey>squid:S4684</sonar.issue.ignore.multicriteria.S4684.ruleKey>
         <sonar.jacoco.reportPaths>${project.testresult.directory}/coverage/jacoco/jacoco.exec</sonar.jacoco.reportPaths>
         <sonar.java.codeCoveragePlugin>jacoco</sonar.java.codeCoveragePlugin>
-<<<<<<< HEAD
-        <sonar.testExecutionReportPaths>${project.testresult.directory}/jest/TESTS-results-sonar.xml</sonar.testExecutionReportPaths>
-        <sonar.typescript.lcov.reportPaths>${project.testresult.directory}/lcov.info</sonar.typescript.lcov.reportPaths>
-        <sonar.sources>${project.basedir}/src/main/</sonar.sources>
-        <sonar.surefire.reportsPath>${project.testresult.directory}/surefire-reports</sonar.surefire.reportsPath>
-=======
         <sonar.typescript.lcov.reportPaths>${project.testresult.directory}/lcov.info</sonar.typescript.lcov.reportPaths>
         <sonar.sources>${project.basedir}/src/main/</sonar.sources>
         <sonar.junit.reportsPath>${project.testresult.directory}</sonar.junit.reportsPath>
->>>>>>> jhipster_upgrade
         <sonar.tests>${project.basedir}/src/test/</sonar.tests>
 
         <!-- jhipster-needle-maven-property -->
@@ -155,49 +127,6 @@
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
         <dependency>
-<<<<<<< HEAD
-            <groupId>io.dropwizard.metrics</groupId>
-            <artifactId>metrics-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.dropwizard.metrics</groupId>
-            <artifactId>metrics-annotation</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.dropwizard.metrics</groupId>
-            <artifactId>metrics-json</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.prometheus</groupId>
-            <artifactId>simpleclient</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.prometheus</groupId>
-            <artifactId>simpleclient_dropwizard</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.prometheus</groupId>
-            <artifactId>simpleclient_servlet</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.dropwizard.metrics</groupId>
-            <artifactId>metrics-jcache</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.dropwizard.metrics</groupId>
-            <artifactId>metrics-jvm</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.dropwizard.metrics</groupId>
-            <artifactId>metrics-servlet</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.dropwizard.metrics</groupId>
-            <artifactId>metrics-servlets</artifactId>
-        </dependency>
-        <dependency>
-=======
->>>>>>> jhipster_upgrade
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-hibernate5</artifactId>
         </dependency>
@@ -237,13 +166,6 @@
             <artifactId>liquibase-slf4j</artifactId>
         </dependency>
         <dependency>
-<<<<<<< HEAD
-            <groupId>com.ryantenney.metrics</groupId>
-            <artifactId>metrics-spring</artifactId>
-        </dependency>
-        <dependency>
-=======
->>>>>>> jhipster_upgrade
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
         </dependency>
@@ -391,21 +313,12 @@
             <artifactId>spring-security-data</artifactId>
         </dependency>
         <dependency>
-<<<<<<< HEAD
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-localconfig-connector</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-heroku-connector</artifactId>
-=======
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-prometheus</artifactId>
         </dependency>
         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-core</artifactId>
->>>>>>> jhipster_upgrade
         </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
     </dependencies>
@@ -443,13 +356,10 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-<<<<<<< HEAD
-=======
                 <artifactId>maven-idea-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
->>>>>>> jhipster_upgrade
                 <artifactId>maven-resources-plugin</artifactId>
             </plugin>
             <plugin>
@@ -510,23 +420,6 @@
                     <groupId>pl.project13.maven</groupId>
                     <artifactId>git-commit-id-plugin</artifactId>
                     <version>${git-commit-id-plugin.version}</version>
-<<<<<<< HEAD
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>revision</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <failOnNoGitDirectory>false</failOnNoGitDirectory>
-                            <generateGitPropertiesFile>true</generateGitPropertiesFile>
-                            <includeOnlyProperties>
-                                <includeOnlyProperty>^git.commit.id.abbrev$</includeOnlyProperty>
-                                <includeOnlyProperty>^git.commit.id.describe$</includeOnlyProperty>
-                                <includeOnlyProperty>^git.branch$</includeOnlyProperty>
-                            </includeOnlyProperties>
-=======
                     <executions>
                         <execution>
                             <goals>
@@ -542,7 +435,6 @@
                             <includeOnlyProperty>^git.commit.id.describe$</includeOnlyProperty>
                             <includeOnlyProperty>^git.branch$</includeOnlyProperty>
                         </includeOnlyProperties>
->>>>>>> jhipster_upgrade
                     </configuration>
                 </plugin>
                 <plugin>
@@ -602,72 +494,15 @@
                       </container>
                   </configuration>
                 </plugin>
-<<<<<<< HEAD
-                <!--
-                    This plugin's configuration is used to store Eclipse m2e settings only.
-                    It has no influence on the Maven build itself.
-                    Remove when the m2e plugin can correctly bind to Maven lifecycle
-                -->
-                <plugin>
-                    <groupId>org.eclipse.m2e</groupId>
-                    <artifactId>lifecycle-mapping</artifactId>
-                    <version>${lifecycle-mapping.version}</version>
-                    <configuration>
-                        <lifecycleMappingMetadata>
-                            <pluginExecutions>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>org.jacoco</groupId>
-                                        <artifactId>
-                                            jacoco-maven-plugin
-                                        </artifactId>
-                                        <versionRange>
-                                            ${jacoco-maven-plugin.version}
-                                        </versionRange>
-                                        <goals>
-                                            <goal>prepare-agent</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <ignore/>
-                                    </action>
-                                </pluginExecution>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>com.github.eirslett</groupId>
-                                        <artifactId>frontend-maven-plugin</artifactId>
-                                        <versionRange>${frontend-maven-plugin.version}</versionRange>
-                                        <goals>
-                                            <goal>install-node-and-npm</goal>
-                                            <goal>npm</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <ignore/>
-                                    </action>
-                                </pluginExecution>
-                            </pluginExecutions>
-                        </lifecycleMappingMetadata>
-                    </configuration>
-                </plugin>
-=======
->>>>>>> jhipster_upgrade
                 <plugin>
                     <groupId>org.liquibase</groupId>
                     <artifactId>liquibase-maven-plugin</artifactId>
                     <version>${liquibase.version}</version>
                     <configuration>
-<<<<<<< HEAD
-                        <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
-                        <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
-                        <driver>org.h2.Driver</driver>
-                        <url>jdbc:h2:file:./target/h2db/db/jhipster</url>
-=======
                         <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
                         <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                         <driver>org.h2.Driver</driver>
                         <url>jdbc:h2:file:${project.build.directory}/h2db/db/jhipster</url>
->>>>>>> jhipster_upgrade
                         <defaultSchemaName></defaultSchemaName>
                         <username>jhipster</username>
                         <password></password>
@@ -739,8 +574,6 @@
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
-<<<<<<< HEAD
-=======
                     <artifactId>maven-idea-plugin</artifactId>
                     <version>${maven-idea-plugin.version}</version>
                     <configuration>
@@ -749,7 +582,6 @@
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
->>>>>>> jhipster_upgrade
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>${maven-resources-plugin.version}</version>
                     <executions>
@@ -760,11 +592,7 @@
                                 <goal>copy-resources</goal>
                             </goals>
                             <configuration>
-<<<<<<< HEAD
-                                <outputDirectory>target/classes</outputDirectory>
-=======
                                 <outputDirectory>${project.build.directory}/classes</outputDirectory>
->>>>>>> jhipster_upgrade
                                 <useDefaultDelimiters>false</useDefaultDelimiters>
                                 <delimiters>
                                     <delimiter>#</delimiter>
@@ -788,27 +616,16 @@
                             </configuration>
                         </execution>
                         <execution>
-<<<<<<< HEAD
-                            <id>docker-resources</id>
-=======
                             <id>jib-www-resources</id>
->>>>>>> jhipster_upgrade
                             <phase>verify</phase>
                             <goals>
                                 <goal>copy-resources</goal>
                             </goals>
                             <configuration>
-<<<<<<< HEAD
-                                <outputDirectory>target/classes/static/</outputDirectory>
-                                <resources>
-                                    <resource>
-                                        <directory>target/www</directory>
-=======
                                 <outputDirectory>${project.build.directory}/classes/static/</outputDirectory>
                                 <resources>
                                     <resource>
                                         <directory>${project.build.directory}/www</directory>
->>>>>>> jhipster_upgrade
                                         <filtering>false</filtering>
                                     </resource>
                                 </resources>
@@ -826,10 +643,7 @@
                         <!-- Fixes a bug which will be solved in next version after 2.22.1 then this can be removed -->
                         <!-- see: https://issues.apache.org/jira/browse/SUREFIRE-1588 -->
                         <useSystemClassLoader>false</useSystemClassLoader>
-<<<<<<< HEAD
-=======
                         <outputDirectory>${sonar.junit.reportsPath}</outputDirectory>
->>>>>>> jhipster_upgrade
                     </configuration>
                 </plugin>
                 <plugin>
@@ -1221,58 +1035,6 @@
             </dependencies>
         </profile>
         <profile>
-<<<<<<< HEAD
-            <id>heroku</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.liquibase</groupId>
-                        <artifactId>liquibase-maven-plugin</artifactId>
-                        <configuration combine.self="override">
-                            <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
-                            <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
-                            <driver></driver>
-                            <url>${env.JDBC_DATABASE_URL}</url>
-                            <defaultSchemaName></defaultSchemaName>
-                            <username>${env.JDBC_DATABASE_USERNAME}</username>
-                            <password>${env.JDBC_DATABASE_PASSWORD}</password>
-                            <referenceUrl>hibernate:spring:com.mycompany.myapp.domain?dialect=org.hibernate.dialect.PostgreSQL82Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
-                            <verbose>true</verbose>
-                            <logging>debug</logging>
-                            <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <artifactId>maven-clean-plugin</artifactId>
-                        <version>${maven-clean-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>clean-artifacts</id>
-                                <phase>install</phase>
-                                <goals>
-                                    <goal>clean</goal>
-                                </goals>
-                                <configuration>
-                                    <excludeDefaultDirectories>true</excludeDefaultDirectories>
-                                    <filesets>
-                                        <fileset>
-                                            <directory>target</directory>
-                                            <excludes>
-                                                <exclude>*.war</exclude>
-                                            </excludes>
-                                            <followSymlinks>false</followSymlinks>
-                                        </fileset>
-                                        <fileset>
-                                            <directory>node_modules</directory>
-                                            <followSymlinks>false</followSymlinks>
-                                        </fileset>
-                                    </filesets>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-=======
             <!-- This is automatically activated when working in Eclipse -->
             <id>eclipse</id>
             <activation>
@@ -1332,7 +1094,6 @@
                         </plugin>
                     </plugins>
                 </pluginManagement>
->>>>>>> jhipster_upgrade
             </build>
         </profile>
         <!-- jhipster-needle-maven-add-profile -->
