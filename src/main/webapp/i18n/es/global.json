@@ -1,10 +1,9 @@
 {
     "global": {
-        "title": "coverb",
+        "title": "Jhipster",
         "browsehappy": "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=en\">actualice su navegador</a> para mejorar su experiencia.",
         "menu": {
             "home": "Inicio",
-            "coverb": "Coverb",
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entidades",
@@ -132,5 +131,5 @@
         "idexists": "A new {{entityName}} cannot already have an ID",
         "idnull": "Invalid ID"
     },
-    "footer": "coverb por jhipster-latino"
+    "footer": "pie de página"
 }
