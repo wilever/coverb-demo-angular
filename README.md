@@ -18,7 +18,7 @@
 <p align="center">
      <a href="https://www.jhipster.tech/">
      <img width= "256px" 
-     src="src/main/webapp/content/images/hipster256.png"></a></p>
+     src="src/main/webapp/content/images/logo/icons/logo-alternate.png"></a></p>
 <h3 align="center">
    <i>develop by 
    <a href="https://twitter.com/jhipster_latino/">@jhipster_latino</a></i></h3>
