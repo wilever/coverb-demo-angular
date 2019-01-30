@@ -4,7 +4,8 @@
      <hr/>
 <p align="center">
    <a href="https://coverb-demo-react.herokuapp.com/">
-     <img src="src/main/webapp/content/images/logo/icons/qr-angular-demo.png"></a></p>   
+     <img width= "256px"
+     src="src/main/webapp/content/images/logo/icons/qr-angular-demo.png"></a></p>   
 <hr />
 <p align="center">
      <a href="https://www.jhipster.tech/">
