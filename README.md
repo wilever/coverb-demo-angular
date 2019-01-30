@@ -1,20 +1,11 @@
-<h1 align="center">
-   Coverb demo</h1>
-   
 <p align="center">
-   <a href="https://coverb-demo-angular.herokuapp.com/">
-     <img src="qr_demo_angular.png"></a></p>
-
-<h1 align="center">
-   Client Framework</h1>
-   
+   <a href="https://github.com/jhipster-latino/generator-jhipster-coverb">
+     <img src="src/main/webapp/content/images/logo/icons/coverb-logo.png"></a></p>   
+     <hr/>
 <p align="center">
-     <a href="https://angular.io/">
-     <img width= "200px"
-     src="src/main/webapp/content/images/logo/svg/angular.svg"></a>
-     </p>
-<h1 align="center">
-   Power by</h1>
+   <a href="https://coverb-demo-react.herokuapp.com/">
+     <img src="src/main/webapp/content/images/logo/icons/qr-angular-demo.png"></a></p>   
+<hr />
 <p align="center">
      <a href="https://www.jhipster.tech/">
      <img width= "256px" 
