@@ -6,7 +6,23 @@ Main page styles
     display: inline-block;
     width: 347px;
     height: 497px;
-    background: url('../../content/images/hipster.png') no-repeat center top;
+    background: url('../../content/images/hipster.png') no-repeat center center;
+    background-size: contain;
+}
+
+.react {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background: url('../../content/images/logo/icons/qr-react-demo.png') no-repeat center center;
+    background-size: contain;
+}
+
+.coverb {
+    display: inline-block;
+    width: 110%;
+    height: 300px;
+    background: url('../../content/images/logo/icons/coverb-logo.png') no-repeat center center;
     background-size: contain;
 }
 
